@@ -3,7 +3,7 @@ package demo;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.layout.StackPane;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class Hello extends Application {
@@ -14,7 +14,7 @@ public class Hello extends Application {
     @Override
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Hello");
-        StackPane root = new StackPane() {{
+        Pane root = new Pane() {{
             getChildren().add(new Label("Hello, JavaFX!"));
         }};
         primaryStage.setScene(new Scene(root, 300, 250));
