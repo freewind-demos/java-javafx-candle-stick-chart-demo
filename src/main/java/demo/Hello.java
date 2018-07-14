@@ -14,9 +14,9 @@ public class Hello extends Application {
     @Override
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Hello");
-        Label label = new Label("Hello, JavaFX!");
-        StackPane root = new StackPane();
-        root.getChildren().add(label);
+        StackPane root = new StackPane() {{
+            getChildren().add(new Label("Hello, JavaFX!"));
+        }};
         primaryStage.setScene(new Scene(root, 300, 250));
         primaryStage.show();
     }
