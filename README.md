@@ -1,9 +1,5 @@
-Maven Demo
-==========
+JavaFX Hello World Demo
+=======================
 
-A very simple maven project demo.
-
-```
-mvn clean install
-```
+Show a window with `Hello, JavaFX` label.
 
